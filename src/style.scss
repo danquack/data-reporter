@@ -1,0 +1,153 @@
+$theme: #DDDAEA;
+$secondary: #353a3f;
+
+html,
+body {
+    margin: 5px;
+    padding: 0;
+}
+
+#logo {
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+
+    button {
+        margin-right: 10px;
+    }
+}
+
+.no-border {
+    border: 0;
+    box-shadow: none;
+}
+
+.category {
+    text-transform: capitalize;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50%;
+    transform: translateX(-25%);
+    width: 100%;
+
+    router-link button {
+        margin-right: 10px;
+    }
+}
+
+.formgroup {
+    width: 50%;
+    margin-top: 15px;
+
+    input {
+        background-color: #fbfbfb;
+    }
+
+    form {
+        h3 {
+            margin-bottom: 1px;
+            align-items: left;
+        }
+    }
+}
+
+.btn-selector,
+.btn-selector:active {
+    background-color: $theme;
+    border-color: $theme;
+    color: #6c757d;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($theme, 30);
+        color: white;
+
+        & * {
+            color: white;
+        }
+    }
+}
+
+.btn-secondary {
+    background-color: $secondary;
+}
+
+.nav-pills {
+    margin-bottom: 5px;
+    padding-left: 8px;
+}
+
+.nav-pills .active>a,
+.active>a:hover,
+.text>a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0px;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: #DDDAEA;
+    background-color: transparent !important;
+    cursor: pointer;
+    color: $secondary;
+}
+
+.nav-pills>li>a {
+    border-radius: 0px;
+    margin-right: 10px;
+    font-size: 1.25em;
+    color: $secondary;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+.header {
+    font-weight: 600;
+}
+
+.table {
+    width: 100%;
+
+    tr {
+        a {
+            text-decoration: none;
+        }
+
+        &:nth-child(even) {
+            background: #ddd;
+        }
+
+        td {
+            width: 100%;
+
+            svg {
+                color: black;
+            }
+
+            .title {
+                font-weight: 600;
+                text-transform: capitalize;
+                color: black;
+            }
+
+            .date {
+                font-weight: 100;
+                color: $secondary;
+                font-size: .75em;
+            }
+
+            &:hover * {
+                color: darken($theme, 30) !important;
+            }
+        }
+    }
+
+}
