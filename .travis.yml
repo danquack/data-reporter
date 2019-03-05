@@ -9,13 +9,13 @@ script:
   - npm run-script lint
 before_deploy:
   - npm run build
-  - zip -r $TRAVIS_BUILD_NUMBER.zip dist/*
-  - git tag $TRAVIS_BUILD_NUMBER
+  - zip -r v$TRAVIS_BUILD_NUMBER.zip dist/*
+  - git tag v$TRAVIS_BUILD_NUMBER
 deploy:
   provider: releases
   api_key: $GITHUB_TOKEN
   file_glob: true
-  file: $TRAVIS_BUILD_NUMBER.zip
+  file: v$TRAVIS_BUILD_NUMBER.zip
   skip_cleanup: true
   draft: true
   on:

@@ -1,4 +1,5 @@
-# [WIP] Data Report Generator
+# Data Report Generator
+[![Build Status](https://travis-ci.com/danquack/data-reporter.svg?branch=master)](https://travis-ci.com/danquack/data-reporter)
 
 ## Project setup
 ```
@@ -13,11 +14,6 @@ npm run serve
 ### Compiles and minifies for production
 ```
 npm run build
-```
-
-### Run your tests
-```
-npm run test
 ```
 
 ### Lints and fixes files
