@@ -17,7 +17,7 @@
     "moment": "^2.24.0",
     "tableify": "^1.1.0",
     "vue": "^2.5.22",
-    "vue-router": "^3.0.2"
+    "vue-router": "^3.0.6"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.4.0",
